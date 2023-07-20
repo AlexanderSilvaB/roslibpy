@@ -165,7 +165,7 @@ class TFClient(object):
         frame = self.frame_info.get(frame_id, None)
 
         if "cbs" in frame:
-            frame["cbs"].pop(callback)
+            frame["cbs"].remove(callback)
 
         if not callback or ("cbs" in frame and len(frame["cbs"]) == 0):
             self.frame_info.pop(frame_id)
