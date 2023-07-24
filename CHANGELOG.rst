@@ -16,6 +16,8 @@ Unreleased
 
 **Fixed**
 
+* Remove the tf callback from the list of callbacks instead of trying to pop it.
+
 **Deprecated**
 
 **Removed**
